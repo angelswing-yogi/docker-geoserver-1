@@ -64,7 +64,7 @@ ENV \
     ## Initial Memory that Java can allocate
     INITIAL_MEMORY="2G" \
     ## Maximum Memory that Java can allocate
-    MAXIMUM_MEMORY="4G" \
+    MAXIMUM_MEMORY="12G" \
     XFRAME_OPTIONS="true" \
     REQUEST_TIMEOUT=60 \
     PARARELL_REQUEST=100 \

@@ -218,6 +218,12 @@ rm -f /tmp/resources/overlays/README.txt && \
       cp -rf /tmp/resources/overlays/* /; \
     fi;
 
+# Copy the style pre-defined style files to the GeoServer Data Directory
+if ls /tmp/resources/styles/* > /dev/null 2>&1; then \
+  mkdir "${GEOSERVER_DATA_DIR}/styles"
+  cp -rf /tmp/resources/styles/* "${GEOSERVER_DATA_DIR}/styles"; \
+fi;
+
 # install Font files in resources/fonts if they exist
 if ls /tmp/resources/fonts/*.ttf > /dev/null 2>&1; then \
       cp -rf /tmp/resources/fonts/*.ttf /usr/share/fonts/truetype/; \
